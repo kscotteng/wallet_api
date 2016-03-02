@@ -6,7 +6,6 @@ class Walletapi < ActiveRecord::Base
         b << x.amount.to_f
       end
       total = b.sum
-
-
   end
+  
 end
