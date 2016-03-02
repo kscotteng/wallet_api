@@ -9,4 +9,10 @@ class WalletapiTest < ActiveSupport::TestCase
     assert_equal 25.00, Walletapi.balance
 
   end
+
+  test "testing number of instances" do
+    assert_equal 2, Walletapi.instance
+
+  end
+  
 end

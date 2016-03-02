@@ -7,5 +7,10 @@ class Walletapi < ActiveRecord::Base
       end
       total = b.sum
   end
+
+  def self.instance
+    self.all.count
+  end
+
   
 end
