@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @walletapi.amount %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @walletapi.date %>
+</p>
+
+<p>
+  <strong>Org:</strong>
+  <%= @walletapi.org %>
+</p>
+
+<%= link_to 'Edit', edit_walletapi_path(@walletapi) %> |
+<%= link_to 'Back', walletapis_path %>

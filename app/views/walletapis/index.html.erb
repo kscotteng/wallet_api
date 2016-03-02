@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Walletapis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Amount</th>
+      <th>Date</th>
+      <th>Org</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @walletapis.each do |walletapi| %>
+      <tr>
+        <td><%= walletapi.amount %></td>
+        <td><%= walletapi.date %></td>
+        <td><%= walletapi.org %></td>
+        <td><%= link_to 'Show', walletapi %></td>
+        <td><%= link_to 'Edit', edit_walletapi_path(walletapi) %></td>
+        <td><%= link_to 'Destroy', walletapi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Walletapi', new_walletapi_path %>
