@@ -9,8 +9,12 @@ class Walletapi < ActiveRecord::Base
   end
 
   def self.instance
-    self.all.count
+      self.all.count
   end
 
-  
+  def self.amount_spent_this_month
+    Time.now.mon
+
+  end
+
 end
